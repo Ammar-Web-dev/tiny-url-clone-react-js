@@ -19,18 +19,17 @@ function Navbar() {
 
         {/* Navigation */}
         <nav className="hidden items-center gap-8 text-sm font-medium text-gray-700 md:flex">
-<Link to="/features" className="transition hover:text-blue-700">
-  FEATURES
-</Link>
+          <Link to="/features" className="transition hover:text-blue-700">
+            FEATURES
+          </Link>
 
-<Link to="/faq" className="transition hover:text-blue-700">
-  PRICING
-</Link>
+          <Link to="/pricing" className="transition hover:text-blue-700">
+            PRICING
+          </Link>
 
-
-<Link to="/faq" className="transition hover:text-blue-700">
-  FAQ
-</Link>
+          <Link to="/faq" className="transition hover:text-blue-700">
+            FAQ
+          </Link>
         </nav>
 
         {/* Right Side */}
@@ -48,9 +47,12 @@ function Navbar() {
           </SignedIn>
 
           <SignedOut>
-            <span className="text-sm text-gray-500">
-              Please Sign In
-            </span>
+            <Link
+              to="/login"
+              className="rounded-lg bg-blue-600 px-5 py-2 text-sm font-semibold text-white transition hover:bg-blue-700"
+            >
+              Login
+            </Link>
           </SignedOut>
 
         </div>

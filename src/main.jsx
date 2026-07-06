@@ -17,10 +17,7 @@ import Terms from "./pages/Terms";
 import Analytics from "./pages/Analytics";
 import Pricing from "./pages/Pricing";
 import Features from "./pages/Features.jsx";
-import Footer from "./components/Footer";
 import FAQ from "./pages/FAQ";
-import NavFeatures from "./pages/NavFeatures.jsx"
-import NavPricing from "./pages/NavPricing.jsx"
 
 const PUBLISHABLE_KEY = import.meta.env.VITE_CLERK_PUBLISHABLE_KEY;
 
@@ -33,7 +30,10 @@ createRoot(document.getElementById("root")).render(
     <ClerkProvider publishableKey={PUBLISHABLE_KEY}>
       <BrowserRouter>
         <Routes>
+          <Route path="/" element={<Home />} />
           <Route path="/home" element={<Home />} />
+          <Route path="/dashboard" element={<Dashboard />} />
+          <Route path="/login" element={<Login />} />
           <Route path="/about" element={<About />} />
           <Route path="/blog" element={<Blog />} />
           <Route path="/contact" element={<Contact />} />
@@ -43,10 +43,7 @@ createRoot(document.getElementById("root")).render(
           <Route path="/analytics" element={<Analytics />} />
           <Route path="/pricing" element={<Pricing />} />
           <Route path="/features" element={<Features />} />
-          {/* Navbarr */}
           <Route path="/faq" element={<FAQ />} />
-          <Route path="/features" element={<NavFeatures />} />
-          <Route path="/pricing" element={<NavPricing />} />
         </Routes>
       </BrowserRouter>
     </ClerkProvider>
