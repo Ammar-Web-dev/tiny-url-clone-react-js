@@ -33,7 +33,7 @@ function Navbar() {
         </nav>
 
         {/* Right Side */}
-        <div className="flex items-center gap-4">
+        {/* <div className="flex items-center gap-4">
 
           <SignedIn>
             <Link
@@ -55,7 +55,7 @@ function Navbar() {
             </Link>
           </SignedOut>
 
-        </div>
+        </div> */}
 
       </div>
     </header>

@@ -1,11 +1,11 @@
-import { SignIn } from "@clerk/clerk-react";
+// import { SignIn } from "@clerk/clerk-react";
 
-function Login() {
-  return (
-    <div className="flex min-h-screen items-center justify-center bg-slate-100">
-      <SignIn forceRedirectUrl="/home" />
-    </div>
-  );
-}
+// function Login() {
+//   return (
+//     <div className="flex min-h-screen items-center justify-center bg-slate-100">
+//       <SignIn forceRedirectUrl="/home" />
+//     </div>
+//   );
+// }
 
-export default Login;
+// export default Login;
